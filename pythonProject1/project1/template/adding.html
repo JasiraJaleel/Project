@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+ <form method ='post' enctype="multipart/form-data" style="text-align:center;">
+     {% csrf_token %}
+     Name <input type="text" name="name"><br><br>
+     Year <input type="text" name="year"><br><br>
+     Desc <textarea name="description"></textarea><br><br>
+     Image <input type="file" name="img" style="padding-left:6%;"><br><br>
+     <input type="submit" class="btn btn-primary">
+ </form>
+
+</body>
+</html>
